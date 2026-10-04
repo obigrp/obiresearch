@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Resources | Obi Research Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Obi <span>Research Group</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="resources.html" class="active nav-lock">🔒 Resources</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Group Resources</h1>
+    <p>Internal documents for current group members.</p>
+  </section>
+
+  <!-- PASSWORD GATE -->
+  <section class="section" id="gate-section">
+    <div class="password-gate">
+      <h2>🔒 Members Only</h2>
+      <p>Please enter the group password to continue.</p>
+      <input type="password" id="password-input" placeholder="Enter password">
+      <button id="password-submit" class="btn btn-primary">Enter</button>
+      <p id="password-error" class="password-error"></p>
+    </div>
+  </section>
+
+  <!-- PROTECTED CONTENT (hidden by default) -->
+  <section class="section hidden" id="protected-content">
+    <h2 class="section-title">Internal Documents</h2>
+    <ul class="resource-list">
+      <li><a href="#">📄 Group Handbook & Onboarding Guide</a></li>
+      <li><a href="#">📄 Current Grant Proposals</a></li>
+      <li><a href="#">📊 Preliminary Data – Project A</a></li>
+      <li><a href="#">📊 Preliminary Data – Project B</a></li>
+      <li><a href="#">📅 Group Calendar</a></li>
+      <li><a href="#">🧪 SOPs & Safety Documents</a></li>
+    </ul>
+    <p class="resource-note">Replace these links with real documents (e.g., hosted on Google Drive, Dropbox, or private GitHub repo) once set up.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Obi Research Group · <a href="https://www.cmc.edu/kravis-department-of-integrated-sciences/">Kravis Department of Integrated Sciences</a> · <a href="https://www.cmc.edu/">Claremont Mckenna College</a></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
